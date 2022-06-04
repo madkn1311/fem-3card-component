@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;700&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;700&family=Lato:wght@300&family=Lexend+Deca:wght@400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    background-color: hsl(0, 0%, 95%);
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+    padding: 100px;
+    margin: auto;
+    box-shadow: 3px 3px #c8c8c8;
+}
+
+h2{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-size: 30px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    font-family: 'Lexend Deca';
+    font-size: 11px;
+}
+
+.car{
+    padding: 30px;
+    width: 14rem;
+    height: 24rem;
+}
+
+.bright-orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.sedan{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: hsl(31, 77%, 52%);
+    font-size: 12px;
+    margin-top: 3rem;
+    transition: 0.5s;
+}
+
+.sedan:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.dark-cyan{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: hsl(184, 100%, 22%);
+    margin-top: 3rem;
+    transition: 0.5s;
+}
+
+.suvs:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.darker-cyan{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+.luxury{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: hsl(179, 100%, 13%);
+    margin-top: 3rem;
+    transition: 0.5s;
+}
+
+.luxury:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .attribution a {
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 900px){
+      .container{
+          display: flex;
+          width: 45rem;
+      }
+  }
+
+  @media only screen and (max-width: 600px){
+      .container{
+          display: flex;
+          flex-direction: column;
+          width: 20rem;
+      }
+
+      .bright-orange{
+          border-radius: 5px 5px 0 0;
+      }
+
+      .darker-cyan{
+          border-radius: 0 0 5px 5px;
+      }
+  }
